@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "laravel/framework": "^9.0",
+        "laravel/framework": "^9.0.*@dev",
         "php" : "^8.0.0",
         "guzzlehttp/guzzle": "~7.0"
     },
@@ -23,6 +23,7 @@
         "phpunit/phpunit": "^8.1"
     },
     "minimum-stability": "dev",
+    "prefer-stable" : true,
     "extra": {
         "laravel": {
             "providers": [
