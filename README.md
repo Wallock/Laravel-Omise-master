@@ -33,7 +33,7 @@
 โหลดผ่าน composer
 
 ```
-composer require wall0ck/omise
+composer require wall0ck/omise:dev-main
 ```
 
 นำไฟล์ config มาไว้ที่โปรเจค
