@@ -1,9 +1,9 @@
 # Laravel-Omise For Laravel9+
 
-[![Total Downloads](https://poser.pugx.org/ox01code/omise/downloads)](https://packagist.org/packages/wall0ck/omise)
-[![Monthly Downloads](https://poser.pugx.org/ox01code/omise/d/monthly)](https://packagist.org/packages/wall0ck/omise)
-[![Daily Downloads](https://poser.pugx.org/ox01code/omise/d/daily)](https://packagist.org/packages/wall0ck/omise)
-[![License](https://poser.pugx.org/ox01code/omise/license)](https://packagist.org/packages/wall0ck/omise)
+[![Total Downloads](https://poser.pugx.org/wall0ck/omise/downloads)](https://packagist.org/packages/wall0ck/omise)
+[![Monthly Downloads](https://poser.pugx.org/wall0ck/omise/d/monthly)](https://packagist.org/packages/wall0ck/omise)
+[![Daily Downloads](https://poser.pugx.org/wall0ck/omise/d/daily)](https://packagist.org/packages/wall0ck/omise)
+[![License](https://poser.pugx.org/wall0ck/omise/license)](https://packagist.org/packages/wall0ck/omise)
 
 # Docs
 
