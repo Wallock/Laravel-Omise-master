@@ -17,4 +17,14 @@ class OmiseCharge extends Omise
 
         return $response->json();
     }
+    public static function retrieve($sourceId)
+    {
+        static::init();
+
+        $response = Http::withHeaders([
+            'Authorization' => 'Basic ' . base64_encode(self::$secret_key)
+        ])->get(self::$url . '/charges/'.$sourceId);
+
+        return $response->json();
+    }
 }
