@@ -2,8 +2,8 @@
 
 namespace wall0ck\Omise\process;
 
-use wall0ck\Omise\process\Omise;
 use Illuminate\Support\Facades\Http;
+use wall0ck\Omise\process\Omise;
 
 class OmiseCharge extends Omise
 {
@@ -12,7 +12,7 @@ class OmiseCharge extends Omise
         static::init();
 
         $response = Http::withHeaders([
-            'Authorization' => 'Basic ' . base64_encode(self::$secret_key)
+            'Authorization' => 'Basic ' . base64_encode(self::$secret_key),
         ])->post(self::$url . '/charges', $data);
 
         return $response->json();
@@ -21,10 +21,15 @@ class OmiseCharge extends Omise
     {
         static::init();
 
-        $response = Http::withHeaders([
-            'Authorization' => 'Basic ' . base64_encode(self::$secret_key)
-        ])->get(self::$url . '/charges/'.$sourceId);
-
+        if ($sourceId) {
+            $response = Http::withHeaders([
+                'Authorization' => 'Basic ' . base64_encode(self::$secret_key),
+            ])->get(self::$url . '/charges/' . $sourceId);
+        } else {
+            $response = Http::withHeaders([
+                'Authorization' => 'Basic ' . base64_encode(self::$secret_key),
+            ])->get(self::$url . '/charges/');
+        }
         return $response->json();
     }
 }

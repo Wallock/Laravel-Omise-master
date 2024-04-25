@@ -10,7 +10,8 @@
 เวอร์ชั่นเก่ามันติดตั้งไม่ได้แล้ว เลยอัพใหม่ให้รองรับ Laravel v9.0 ขึ้นไป
 
 - รองรับการ สร้าง OmiseCharge , OmiseSource
-- เพิ่ม retrieve \*ใหม่
+- ปรับปรุง OmiseCharge ให้ retrieve ได้ \*ใหม่
+- เพิ่ม Balance API เช็คยอดเงินได้
 
 # Docs
 
